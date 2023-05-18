@@ -2,15 +2,15 @@ from setuptools import setup, find_packages
 
 setup(
     name='jwtools',
-    version='0.1.1',
-    description="jwtools",
-    long_description=open('README.md').read(),
+    version='0.1.2',
+    description="It is a micro-toolbox that includes various common operations and will continue to be improved in the future.",
+    long_description=open('README.md', encoding='utf-8').read(),
     include_package_data=True,
     author='jinghewang',
     author_email='jinghewang@163.com',
-    license='MIT License',  # 协议
-    url='',  # github或者自己的网站地址
-    packages=find_packages(),  # 包的目录
+    license='MIT License',
+    url='https://github.com/jinghewang/python-jwtools.git',
+    packages=find_packages(),
     excluded_packages=['tests'],
     classifiers=[
         "Programming Language :: Python :: 3",
