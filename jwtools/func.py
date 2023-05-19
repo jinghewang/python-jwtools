@@ -30,7 +30,7 @@ def write_text_to_file(filename: str, content: str, encoding="utf-8") -> bool:
     :return: 是否写入成功。
     """
     try:
-        with open(filename, "w", encoding) as f:
+        with open(filename, "w", encoding=encoding) as f:
             f.write(content)
     except Exception as e:
         return False
