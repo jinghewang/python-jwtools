@@ -50,3 +50,18 @@ def read_text_from_file(filename, encoding="utf-8") -> str:
     with open(filename, "r", encoding=encoding) as file:
         text = file.read()
     return text
+
+
+def print_vf(*args):
+    """
+    print var or function
+    :author wjh
+    :date 2023-05-22
+    :param args:
+    :return:
+    """
+    for arg in args:
+        if callable(arg):
+            print(arg())
+        else:
+            print(arg)
