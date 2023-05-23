@@ -17,6 +17,11 @@ python -m twine upload dist/*
 
 ### 使用
 
+#### 安装或更新
+pip3 install jwtools
+pip3 install --upgrade jwtools
+
+#### 代码使用
 ```python
 from jwtools.func import *
 
