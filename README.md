@@ -24,6 +24,7 @@ pip3 install --upgrade jwtools
 #### 代码使用
 ```python
 from jwtools.func import *
+from jwtools.io_util import *
 
 mm5 = get_text_md5("dddd")
 print(mm5)
