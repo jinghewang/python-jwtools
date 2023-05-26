@@ -42,6 +42,24 @@ def time_ms() -> int:
     return int(round(t * 1000))
 
 
+def time_work(start: float, end: float = None) -> float:
+    """
+    计算时间差值
+    :param start: 开始时间戳
+    :param end: 结束时间戳
+    :return:
+    """
+    if end is None:
+        end = time.time()
+
+    result = {
+        'start': start,
+        "end": end,
+        'worktime': end - start
+    }
+    return result
+
+
 def time_to_timestamp(source_time: str) -> float:
     """
     从时间获取时间戳

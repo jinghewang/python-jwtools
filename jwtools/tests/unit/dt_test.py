@@ -52,6 +52,16 @@ class IOTestCase(BasicsTestCase):
 
         self.assertTrue(True, 'test_time_ms')
 
+    def test_time_work(self):
+        print_line('test_time_ms')
+        start = time.time()
+        time.sleep(2)
+        print_vf(
+            time_work(start),
+        )
+
+        self.assertTrue(True, 'test_time_ms')
+
 
 if __name__ == '__main__':
     unittest.main()
