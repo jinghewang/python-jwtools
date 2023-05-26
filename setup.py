@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='jwtools',
-    version='0.1.8',
+    version='0.1.9',
     description="It is a micro-toolbox that includes various common operations and will continue to be improved in the future.",
     long_description=open('README.md', encoding='utf-8').read(),
     long_description_content_type='text/markdown',
